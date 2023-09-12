@@ -1,0 +1,31 @@
+1. A function is used to group code that gets executed multiple times.
+
+2. The code in the function gets executed when the function is called.
+
+3. 'def print()' statement creates a function with name 'print' because def is used to create or define variables and functions.
+
+4. A function is a block of code that will be used repeatedly.
+   Where as a function call starts execution of a code once.
+
+5. In a python program, there is only one global scope but multiple local scopes.
+
+6. When a function call returns in Python, The local scope of the function is destroyed.
+
+7. A return values is the output value given by the function to the code.Yes, A return value can be a part of an expression.
+
+8. If a function doesn't have a return statement, the it doesn't have a return valueor the return value willl become 'none'
+
+9. By using the keyword 'global', we can force a variable in a function to refer to a global variable.
+
+10.The None keyword is used to define a null value, or no value at all. None is not the same as 0, False, or an empty string. None is a data type of its own (NoneType) 
+
+11. It imports a module named 'allareyourpetsnamederic'.
+
+12. spam.bacon()
+
+13. We can prevent a program from crashing when it gets an error by handling an error 
+    using 'try' and 'except' statements.
+
+14. The part of code that has a chance of getting an error is written in 'try' clause and
+    the part of code that should get executed if there is an error in the program 
+    should be written in 'except' clause 

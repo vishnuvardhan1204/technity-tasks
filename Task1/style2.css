@@ -1,0 +1,136 @@
+body{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    background-color: #e3f0ff;
+    font-family: 'Montserrat',sans-serif;
+}
+.photo{
+    width:900px;
+    height: 600px;
+    position:absolute;
+    top: 150px;
+    right:10px;
+}
+nav{
+    height:80px;
+}
+nav h1{
+    float:left;
+    margin-left: 100px;
+    margin-right: 185px;
+    line-height:85px;
+    font-size: 35px;
+    font-size: inline;
+    color:black;
+}
+nav ul{
+    float:center;
+    line-height: 80px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0 5px;
+    margin-left: 50px;
+}
+nav ul li a{
+    color:black;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 7px 8px;
+}
+nav button{
+    background-color: #5654b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;           
+    margin-right: 15px;
+}
+.subscribe{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 80px; 
+    margin-right: 80px;
+}
+.input{
+    padding: 20px;
+    background-color:white;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+.button2{
+    background-color: #5654b3;
+    color:white;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right:80px;
+}
+.text{
+    font-size: 300%;
+    font-weight: bold;
+    margin-left: 80px;
+    margin-top:125px;
+}
+.text p{
+    margin-top: 25px;
+    font-size: 16px;
+    color:#5654b3;
+    border-radius: 5px;
+    word-spacing: 5px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+.icons{
+    margin-top: 75px;
+}
+.fa {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa-instagram{
+    background: #5654b3;
+    color: white;
+    font-size: 20px;
+    margin-left:80px;
+    border-radius: 4px;
+}
+.fa-facebook{
+    background: #5654b3;
+    color: white;
+    font-size: 20px;
+    margin-left: 5px;
+    border-radius: 4px;
+}
+.fa-twitter{
+    background: #5654b3;
+    color: white;
+    font-size: 20px;
+    margin-left: 5px;
+    border-radius: 4px;
+}
+.fa-youtube{
+    background: #5654b3;
+    color: white;
+    font-size: 20px;
+    margin-left: 5px;
+    border-radius:4px;
+}
+.fa-whatsapp{
+    background: #5654b3;
+    color: white;
+    font-size: 20px;
+    margin-left: 5px;
+    border-radius: 4px;
+}

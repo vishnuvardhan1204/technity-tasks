@@ -1,0 +1,383 @@
+<html>
+<head>
+  <title> CSS Form</title>
+  <h1 align="center">CSS Forms</h1>
+  <style>h2{font-size: 15px;}</style>
+  <style>
+    /*css properties internal*/
+    body {
+      
+      font-family: Verdana;
+      margin: 0;
+      padding: 0;
+    }
+
+    form {
+      width: 80%;
+      margin: 0 auto;
+      border: 3px dashed black;
+      padding: 10px ;
+      background-color: #fadf75;
+    }/*declaring form properties*/
+
+    input {
+      width: 100%;
+      
+      padding: 10px;
+      border: 2px solid rgb(33, 9, 244);
+    }
+    input:valid,
+text:valid{
+  border-color: green;
+}/*input validating and invalidate colors*/
+
+input:invalid,text:invalid {
+  border-color: red;
+}
+input[type="textarea"]{
+  width: 100%;
+  padding: 10px;
+}/*code of text area*/
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: rgb(4, 4, 24);
+}
+input:valid,
+textarea:valid{
+  border-color: green;
+}
+
+input:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+
+
+/* radio buttons css properties*/
+.radio-container {
+  margin-bottom: 10px;
+}
+
+.radio-container label { /*label the radio button icon*/
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.radio-container input[type="radio"] { /* used to style all radio buttons in a group with a single CSS rule*/
+  border: 2px solid rgb(33, 9, 244);
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radiomark {  /*outside body*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #a0a0a0;
+}
+
+.radio-container input[type="radio"]:checked ~ .radiomark {
+  background-color: #08de1d;                             /*can change the radio button color*/
+}/*checked color of the radio buttons*/
+
+.radiomark:after {/*used to add a check mark after a radio button that has been selected*/
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-container input[type="radio"]:checked ~ .radiomark:after {/* pseudo-element will add a check mark after the radio button. The check mark will be added to the radio button because it is within an element with the class radio-container*/
+  display: block;
+}
+
+.radiomark:after {/*mark the radio button*/
+  top: 4.5px;
+  left: 4.5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+}
+
+/*css properties of select*/
+
+select { /*css properties of select*/
+  width: 100%;
+  padding: 10px;
+  border: 2px solid rgb(33, 9, 244);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #e9eff3;
+  color: #333;
+  font-size: 14px;
+}
+
+select:focus {
+  outline: none;
+  border-color: rgb(33, 11, 233);
+  
+}
+
+select  {
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+}
+select:valid {
+    border: 1px solid green;
+}
+
+select:invalid {
+    border: 1px solid red;
+}
+
+/*File insert*/
+
+
+
+input[type="file"]{
+  min-width: auto;
+  border: none;
+  border-radius: none;
+}
+
+/*Adress css properties*/
+
+
+.address{
+  width: 100%;
+  height: 50%;
+}
+
+
+/*check boxes*/
+
+input[type="checkbox"] {
+  /* Set the default styles for checkboxes */
+  width: 20px;
+  height: 20px;
+  border: 1px solid #f50808;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  /* Change the styles for checkboxes when they are checked */
+  background-color: #1b11b2;
+}
+
+
+
+label {
+  /* Align the labels to the left of the checkboxes */
+  display: inline-block;
+  margin-left: 10px;
+}
+
+
+/*Disabled input*/
+input[disabled] {
+  background-color: #ccc;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/*submit button properties*/
+
+
+    input[type="submit"]{
+        width: 20%;
+      background-color: #09ee23;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      float: right;
+      cursor: pointer;
+      text-align: center;
+    }
+    input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/*reset button prop*/
+
+
+    input[type="reset"] {
+        width: 20%;
+        
+      background-color: #f40404;
+      color: #fff;
+      border: none;
+      padding: 10px;
+
+    }
+    input[type=reset]:hover {
+  background-color: #7e2020;
+}
+ 
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    /*photobox prop*/
+
+    
+    .photo-box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  float: left;
+}
+.photo-box img {
+  cursor: pointer;
+}
+
+input[type=email]{
+  background-image: url('mail.jpg');
+}
+
+
+
+  </style>
+</head>
+<body>
+  <form >
+    <h2>Fill all the required* details below</h2>
+   
+    <label for="fname"> First Name *</label>
+    <input type="text" id="fname" name="name" placeholder="First Name"  required="fname"><br></br>
+    
+    
+    <label for="lname">Last Name *</label>
+    <input type="text" id="lname" name="name" placeholder="Last Name"  required="name"><br></br>
+    
+    
+    <div class="photo-box">
+     <label for="photo-box">Upload your photo</label>
+      <input type="file" id="file" name="image" accept="image/*">
+  </div><br></br>
+  <br></br>
+  <br></br>
+  <p>Phone Number*</p>
+  <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{10}" required>
+  <br></br>
+  <br></br>
+
+    <label for="fname"> Father Name *</label>
+    <input type="text" id="gname" name="name" placeholder="Father Name"   required><br></br>
+    <span class="error"></span>
+
+    <label for="mname"> Mother Name *</label>
+    <input type="text" id="mname" name="name" placeholder="Mother Name"   required><br></br>
+    <span class="error"></span>
+   
+	<label for="start">Select date of birth*:</label>
+    <input type="date" id="DOB" name="DOB" min="2000-01-01" max="2023-01-01" value="yyyy-mm-dd" required>
+
+	<label for="age"> Enter Age*</label>
+    <input type="number" id="age" name="age" max="100" min="16" step="1" value="age" required>
+
+    <p>Gender*</p>
+    <div class="radio-container">
+      <label>
+        <input type="radio" name="gender">
+        Male
+        <span class="radiomark"></span>
+      </label>
+      <label>
+        <input type="radio" name="gender">
+        Female
+        <span class="radiomark"></span>
+      </label>
+      <label>
+        <input type="radio" name="gender">
+        Other
+        <span class="radiomark"></span>
+      </label>
+    </div>
+    <label for="University">University*</label>
+    <select id="country" required>
+      <option value="Select">Select</option>
+      <option value="Amrita,Coimbatore">Amrita,Coimbatore</option>
+      <option value="Amrita-Amaravathi">Amrita-Amaravathi</option>
+      <option value="Amrita,Amritapuri">Amrita,Amritapuri</option>
+    </select>
+    <p>Section*</p>
+    <div class="radio-container" >
+      <label>
+        <input type="radio" name="Section" required>
+        CSE-A
+        <span class="radiomark"></span>
+      </label>
+      <label>
+        <input type="radio" name="Section" required>
+        CSE-B
+        <span class="radiomark"></span>
+      </label>
+      <label>
+        <input type="radio" name="Section" required>
+        CSE-C
+        <span class="radiomark"></span>
+      </label>
+      <label>
+        <input type="radio" name="Section" required>
+        AIE-A
+        <span class="radiomark"></span>
+      </label>
+      <label>
+        <input type="radio" name="Section" required>
+        AIE-B
+        <span class="radiomark"></span>
+      </label>
+    </div>
+    <p>Favourite programming language</p>
+    <input type="checkbox" name="option1" value="1"> C<br></br>
+  <input type="checkbox" name="option2" value="2"> C++<br></br>
+  <input type="checkbox" name="option3" value="3"> Java<br></br>
+  <input type="checkbox" name="option4" value="4">Python<br></br>
+  <input type="checkbox" name="option5" value="5">HTML<br></br>
+  <input type="checkbox" name="option6" value="6">Javascript<br></br>
+
+    <label for="email">Email *</label>
+    <input type="email" id="email" name="email" placeholder=" Email" required="email">
+    <br></br>
+    <span class="error"></span>
+
+    <label for="password">Password*:</label>
+    <input type="password" id="password" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
+    
+    <label for="password">Confirm Password*:</label>
+    <input type="password" id="password" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
+
+
+    <p>Address</p>
+    <textarea name="Address" form="usrform"placeholder="Enter your address here...."></textarea><br></br>
+    </div>
+
+      <label for="file">Upload the file</label>
+      <input type="file" id="file" name="image" multiple >
+      <br></br>
+
+      <label for="path">Enter the URL of your project</label>
+      <input type="url" id="path" name="path" pattern="https://.*" size="50" placeholder="Enter url"required><br></br>
+    
+      <p>Office</p>
+      <textarea name="Office" placeholder="For office use only...." disabled></textarea><br></br>
+
+      
+      
+    <input type="submit" value="submit">
+    <input type="reset" value="reset">
+
+  </form>
+</body>
+</html>

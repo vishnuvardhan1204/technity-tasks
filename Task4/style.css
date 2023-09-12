@@ -1,0 +1,131 @@
+body {
+    text-align: center;
+    background-color: #283149;
+  }
+  
+  h1 {
+    font-size: 5rem;
+    color: #DBEDF3;
+    text-shadow: 3px 0 #DA0463;
+  
+  }
+  
+  .set {
+    margin: 10% auto;
+  }
+  
+  
+  .pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+  }
+    
+  .w-drum {
+    outline: none;
+    box-shadow: 10px 5px 5px red;
+    font-size: 5rem;
+    line-height: 2;
+    font-weight: 900;
+    color:red;
+    border-radius: 15px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+    background-color: violet;
+  }
+
+  .a-drum {
+    outline: none;
+    box-shadow:10px 5px 5px orange;
+    font-size: 5rem;
+    line-height: 2;
+    font-weight: 900;
+    color: orange;
+    border-radius: 15px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+    background-color: indigo;
+  }
+
+  .s-drum {
+    outline: none;
+    box-shadow: 10px 5px 5px yellow;
+    font-size: 5rem;
+    line-height: 2;
+    font-weight: 900;
+    color: yellow;
+    border-radius: 15px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+    background-color: blue;
+  }
+
+  .d-drum {
+    outline: none;
+    box-shadow: 10px 5px 5px #DA0463;
+    font-size: 5rem;
+    line-height: 2;
+    font-weight: 900;
+    color: #DA0463;
+    border-radius: 15px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+    background-color: green;
+  }
+  .j-drum {
+    outline: none;
+    box-shadow: 10px 5px 5px rgb(1, 1, 57);
+    font-size: 5rem;
+    line-height: 2;
+    font-weight: 900;
+    color: blue;
+    border-radius: 15px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+    background-color: yellow;
+  }
+  .k-drum {
+    outline: none;
+    box-shadow: 10px 5px 5px indigo;
+    font-size: 5rem;
+    line-height: 2;
+    font-weight: 900;
+    color: indigo;
+    border-radius: 15px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+    background-color: orange;
+  }
+  .l-drum {
+    outline: none;
+    box-shadow: 10px 5px 5px violet;
+    font-size: 5rem;
+    line-height: 2;
+    font-weight: 900;
+    color: violet;
+    border-radius: 15px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+    background-color: red;
+  }
+  
